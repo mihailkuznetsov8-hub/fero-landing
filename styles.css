@@ -396,4 +396,30 @@ section {
     .contact-form {
         padding: 20px;
     }
+    /* ОБЁРТКА ДЛЯ ЯНДЕКС.ФОРМЫ */
+.yandex-form-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.yandex-form-wrapper iframe {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .yandex-form-wrapper iframe {
+        height: 900px !important;
+    }
+    
+    .yandex-form-wrapper {
+        padding: 10px;
+    }
+}
 }
