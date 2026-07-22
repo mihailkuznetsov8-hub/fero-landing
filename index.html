@@ -32,10 +32,10 @@
     <!-- ШАПКА -->
     <header class="header">
         <div class="container header-container">
-            <div class="logo">
+            <a href="#" class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
                 <h1>ФЕРО</h1>
                 <span class="logo-subtitle">Оптовые поставки</span>
-            </div>
+            </a>
             <nav class="header-nav">
                 <a href="#about" class="nav-btn">О нас</a>
                 <a href="#brands" class="nav-btn">Бренды</a>
@@ -43,7 +43,7 @@
                 <a href="#contacts" class="nav-btn nav-btn-primary">Контакты</a>
             </nav>
             <div class="header-contacts">
-                <a href="tel:89139487172" class="phone"> 8-913-948-71-72</a>
+                <a href="tel:89139487172" class="phone">📞 8-913-948-71-72</a>
             </div>
         </div>
     </header>
@@ -59,7 +59,7 @@
                     <span>✅ Быстрая доставка</span>
                     <span>✅ Гарантия качества</span>
                 </div>
-                <a href="#contact" class="btn-primary" onclick="ym(110910048,'reachGoal','price_button_click'); return true;"> Получить прайс-лист</a>
+                <a href="#contact" class="btn-primary" onclick="ym(110910048,'reachGoal','price_button_click'); return true;">📋 Получить прайс-лист</a>
             </div>
         </div>
     </section>
@@ -69,9 +69,19 @@
         <div class="container">
             <h2 class="section-title">О компании ФЕРО</h2>
             <div class="about-content">
-                <p>Мы — надёжный поставщик сотовых телефонов и аксессуаров для бизнеса по всей России. 
-                Работаем с 2010 года и знаем, что важно нашим клиентам: <strong>качество, скорость и честные цены</strong>.</p>
-                <p>Наша миссия — помочь вашему бизнесу расти, предоставляя лучшие условия для оптовых закупок.</p>
+                <p>Мы — поставщик сотовых телефонов и аксессуаров для бизнеса по всей России. 
+                Работаем с 2010 года — а это значит, что мы пережили столько смен поколений iPhone 
+                и стандартов связи, что нас уже сложно чем-то удивить.</p>
+                
+                <p>За эти годы мы поняли главное: клиентам нужны не просто гаджеты, а <strong>качество, 
+                космическая скорость доставки</strong> и <strong>честные цены</strong> без «сюрпризов» в договоре.</p>
+                
+                <p>Мы не ищем мимолетных сделок. Наша миссия — стать тем самым надежным партнером, 
+                с которым ваш бизнес будет уверенно расти год за годом. С нас — лучшие условия 
+                для оптовых закупок, с вас — готовность к долгому и прибыльному сотрудничеству.</p>
+                
+                <p>Обещаем, что наши обязательства будут работать дольше, чем аккумуляторы 
+                у поставляемых нами смартфонов! 🔋</p>
             </div>
         </div>
     </section>
@@ -86,14 +96,16 @@
                 <span class="brand-tag brand-tag-xiaomi">Xiaomi</span>,
                 <span class="brand-tag brand-tag-honor">HONOR</span>,
                 <span class="brand-tag brand-tag-huawei">Huawei</span>,
-                <span class="brand-tag brand-tag-infinix">Infinix</span>,
-                <span class="brand-tag brand-tag-maxvi">MAXVI</span>,
-                <span class="brand-tag brand-tag-nokia">NOKIA</span>,
-                <span class="brand-tag brand-tag-oneplus">ONEPLUS</span>,
-                <span class="brand-tag brand-tag-phillips">Phillips</span>,
                 <span class="brand-tag brand-tag-realme">Realme</span>,
+                <span class="brand-tag brand-tag-oneplus">ONEPLUS</span>,
                 <span class="brand-tag brand-tag-tecno">TECNO</span>,
+                <span class="brand-tag brand-tag-infinix">Infinix</span>,
+                <span class="brand-tag brand-tag-nokia">NOKIA</span>,
+                <span class="brand-tag brand-tag-blackview">Blackview</span>,
                 <span class="brand-tag brand-tag-ulefone">Ulefone</span>,
+                <span class="brand-tag brand-tag-bq">BQ</span>,
+                <span class="brand-tag brand-tag-maxvi">MAXVI</span>,
+                <span class="brand-tag brand-tag-phillips">Phillips</span>,
                 <span class="brand-tag brand-tag-yandex">Яндекс станции</span>
             </div>
         </div>
@@ -140,23 +152,26 @@
 
     <!-- ОТЗЫВЫ -->
     <section class="reviews" id="reviews">
-       <div class="reviews-grid">
-    <div class="review-card">
-        <div class="review-stars">⭐⭐⭐⭐⭐</div>
-        <p class="review-text">«Работаем с ФЕРО уже больше 3 лет. Всегда оперативная отправка, ни разу не подвели со сроками. Цены действительно одни из лучших на рынке.»</p>
-        <div class="review-author">Алексей М., магазин «СотаВик»</div>
-    </div>
-    <div class="review-card">
-        <div class="review-stars">⭐⭐⭐⭐⭐</div>
-        <p class="review-text">«Надёжный поставщик. Прайсы всегда актуальные, наличие соответствует заявленному. Менеджеры быстро отвечают и помогают с подбором товара.»</p>
-        <div class="review-author">Ирина К., Салон связи «Мегафон»</div>
-    </div>
-    <div class="review-card">
-        <div class="review-stars">⭐⭐⭐⭐⭐</div>
-        <p class="review-text">«Перешли к вам от другого поставщика и не пожалели. Отправки быстрые, товар приходит целым. Отдельный плюс — и телефоны, и аксессуары можно заказать в одном месте, очень удобно.»</p>
-        <div class="review-author">Сергей В., Салон «Теле2»</div>
-    </div>
-</div>
+        <div class="container">
+            <h2 class="section-title">Что говорят наши клиенты</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">«Работаем с ФЕРО уже больше 3 лет. Всегда оперативная отправка, ни разу не подвели со сроками. Цены действительно одни из лучших на рынке.»</p>
+                    <div class="review-author">Алексей М., магазин «СотаВик»</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">«Надёжный поставщик. Прайсы всегда актуальные, наличие соответствует заявленному. Менеджеры быстро отвечают и помогают с подбором товара.»</p>
+                    <div class="review-author">Ирина К., Салон связи «Мегафон»</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">«Перешли к вам от другого поставщика и не пожалели. Отправки быстрые, товар приходит целым. Отдельный плюс — и телефоны, и аксессуары можно заказать в одном месте, очень удобно.»</p>
+                    <div class="review-author">Сергей В., Салон «Теле2»</div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ПРЕИМУЩЕСТВА -->
@@ -180,7 +195,7 @@
                     <p>Только оригинальная продукция и проверенные аналоги. Гарантия на все товары</p>
                 </div>
                 <div class="advantage-card">
-                    <div class="advantage-icon"></div>
+                    <div class="advantage-icon">📞</div>
                     <h3>Персональный подход</h3>
                     <p>Индивидуальные условия для постоянных клиентов. Персональный менеджер</p>
                 </div>
@@ -225,11 +240,12 @@
             
             <!-- ЯНДЕКС.ФОРМА -->
             <div class="yandex-form-wrapper">
+                <script src="https://forms.yandex.ru/_static/embed.js"></script>
                 <iframe src="https://forms.yandex.ru/u/6a5f2974505690f639a09559?iframe=1" 
                         frameborder="0" 
                         name="ya-form-6a5f2974505690f639a09559" 
                         width="100%"
-                        height="800"
+                        height="1100"
                         style="max-width: 650px; margin: 0 auto; display: block; border-radius: 12px;">
                 </iframe>
             </div>
