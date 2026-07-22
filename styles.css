@@ -30,14 +30,22 @@ body {
 
 .header-container {
     display: flex;
-    justify-content: flex-end; /* Сдвиг вправо */
+    justify-content: flex-end;
     align-items: center;
     gap: 40px;
     padding: 15px 40px;
 }
 
 .logo {
-    margin-right: auto; /* Логотип остаётся слева */
+    margin-right: auto;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 .logo h1 {
@@ -45,6 +53,11 @@ body {
     font-size: 36px;
     font-weight: 800;
     letter-spacing: -1px;
+    margin: 0;
+}
+
+.logo:hover h1 {
+    color: #7B1FA2;
 }
 
 .logo-subtitle {
@@ -173,6 +186,17 @@ section {
     font-weight: 800;
 }
 
+/* ПЛАВНЫЙ ПЕРЕХОД К СЕКЦИЯМ (чтобы шапка не перекрывала) */
+#about,
+#brands,
+#reviews,
+#products,
+#advantages,
+#contact,
+#contacts {
+    scroll-margin-top: 120px;
+}
+
 /* О КОМПАНИИ */
 .about {
     background: white;
@@ -241,6 +265,8 @@ section {
 .brand-tag-tecno { background: linear-gradient(135deg, #0066FF, #0052CC); }
 .brand-tag-ulefone { background: linear-gradient(135deg, #FF5722, #E64A19); }
 .brand-tag-yandex { background: linear-gradient(135deg, #FC3F1D, #D93619); }
+.brand-tag-blackview { background: linear-gradient(135deg, #2E7D32, #1B5E20); }
+.brand-tag-bq { background: linear-gradient(135deg, #E91E63, #C2185B); }
 
 /* ТОВАРЫ */
 .products-grid {
@@ -400,51 +426,20 @@ section {
     margin-bottom: 40px;
 }
 
-.contact-form {
-    max-width: 600px;
+.yandex-form-wrapper {
+    max-width: 700px;
     margin: 0 auto;
-    background: #f9f9f9;
-    padding: 40px;
+    background: white;
+    padding: 20px;
     border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
+.yandex-form-wrapper iframe {
+    max-width: 100%;
     display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #333;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px 16px;
-    border: 2px solid #e0e0e0;
+    margin: 0 auto;
     border-radius: 8px;
-    font-size: 16px;
-    font-family: inherit;
-    transition: border-color 0.3s;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #9C27B0;
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-.btn-submit {
-    width: 100%;
-    font-size: 18px;
-    padding: 16px;
 }
 
 .form-note {
@@ -452,19 +447,6 @@ section {
     font-size: 13px;
     color: #999;
     margin-top: 15px;
-}
-
-.form-success {
-    text-align: center;
-    padding: 40px;
-    background: #E8F5E9;
-    border-radius: 12px;
-    color: #2E7D32;
-}
-
-.form-success h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
 }
 
 /* КОНТАКТЫ */
@@ -516,23 +498,6 @@ section {
     margin-bottom: 10px;
 }
 
-/* ЯНДЕКС ФОРМА */
-.yandex-form-wrapper {
-    max-width: 700px;
-    margin: 0 auto;
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.yandex-form-wrapper iframe {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-}
-
 /* АДАПТИВНОСТЬ */
 @media (max-width: 768px) {
     .header-container {
@@ -582,20 +547,16 @@ section {
     }
     
     .yandex-form-wrapper iframe {
-        height: 900px !important;
+        height: 1200px !important;
     }
     
     .yandex-form-wrapper {
         padding: 10px;
     }
 }
-/* Отступ для якорных ссылок, чтобы шапка не перекрывала контент */
-#about,
-#brands,
-#reviews,
-#products,
-#advantages,
-#contact,
-#contacts {
-    scroll-margin-top: 120px;
+
+@media (max-width: 480px) {
+    .yandex-form-wrapper iframe {
+        height: 1400px !important;
+    }
 }
