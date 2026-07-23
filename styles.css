@@ -18,7 +18,7 @@ body {
     padding: 0 20px;
 }
 
-/* ШАПКА - УВЕЛИЧЕНА И СДВИНУТА ВПРАВО */
+/* ШАПКА */
 .header {
     background: white;
     box-shadow: 0 2px 15px rgba(0,0,0,0.08);
@@ -186,7 +186,7 @@ section {
     font-weight: 800;
 }
 
-/* ПЛАВНЫЙ ПЕРЕХОД К СЕКЦИЯМ (чтобы шапка не перекрывала) */
+/* ПЛАВНЫЙ ПЕРЕХОД К СЕКЦИЯМ */
 #about,
 #brands,
 #reviews,
@@ -197,7 +197,7 @@ section {
     scroll-margin-top: 120px;
 }
 
-/* О КОМПАНИИ */
+/* === УЛУЧШЕНИЕ СЕКЦИИ "О КОМПАНИИ" === */
 .about {
     background: white;
 }
@@ -205,16 +205,37 @@ section {
 .about-content {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 .about-content p {
-    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    text-align: justify;
+    hyphens: auto;
 }
 
-/* БРЕНДЫ - ЯРКИЕ ТЕГИ ЧЕРЕЗ ЗАПЯТУЮ */
+.about-content p + p {
+    margin-top: 25px;
+}
+
+.about-content strong {
+    color: #8B3D9E;
+    font-weight: 700;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .about-content p {
+        padding: 0 20px;
+        text-align: left;
+        hyphens: none;
+    }
+}
+
+/* БРЕНДЫ */
 .brands {
     background: linear-gradient(135deg, #f8f0ff 0%, #ffffff 100%);
 }
@@ -250,7 +271,6 @@ section {
     box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
-/* Яркие цвета для каждого бренда */
 .brand-tag-apple { background: linear-gradient(135deg, #555555, #000000); }
 .brand-tag-samsung { background: linear-gradient(135deg, #1428A0, #0D1B7A); }
 .brand-tag-xiaomi { background: linear-gradient(135deg, #FF6900, #E55D00); }
