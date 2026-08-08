@@ -55,8 +55,8 @@
             <small>оптовые поставки</small>
         </a>
         <nav class="nav">
-            <a href="#catalog">Каталог</a>
             <a href="#news">Новости</a>
+            <a href="#catalog">Каталог</a>
             <a href="#why">Условия</a>
             <a href="#reviews">Отзывы</a>
             <a href="#contact">Контакты</a>
@@ -119,6 +119,39 @@
     </div>
 </section>
 
+<!-- НОВОСТИ (сразу после брендов) -->
+<section class="section news" id="news">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Новости</span>
+            <h2>Свежее из мира техники</h2>
+            <p>Следим за новинками, которые скоро появятся в нашем оптовом предложении.</p>
+        </div>
+
+        <article class="news-card reveal">
+            <div class="news-image">
+                <!-- Чтобы вставить реальное фото: удалите блок .news-placeholder ниже
+                     и вставьте: <img class="news-img" src="images/tecno-bezelless.jpg" alt="Безрамочный концепт Tecno"> -->
+                <div class="news-placeholder">
+                    <svg class="ic news-ic"><use href="#i-smart"/></svg>
+                    <span>TECNO</span>
+                </div>
+                <span class="news-tag">Новинка</span>
+            </div>
+            <div class="news-body">
+                <div class="news-meta">
+                    <span>31 июля 2026</span>
+                    <span class="news-dot">·</span>
+                    <span>Смартфоны</span>
+                </div>
+                <h3>Tecno показала концепт смартфона с «нулевой рамкой» — экран занимает весь корпус</h3>
+                <p>Впервые в индустрии инженерам удалось полностью убрать чёрную окантовку между дисплеем и корпусом: изображение доходит до самых краёв. Рассказываем, как это устроено и когда новинка может добраться до прилавков.</p>
+                <button class="btn btn-primary-soft" data-open-news>Читать новость <svg class="ic ic-sm"><use href="#i-arrow"/></svg></button>
+            </div>
+        </article>
+    </div>
+</section>
+
 <!-- КАТАЛОГ -->
 <section class="section" id="catalog">
     <div class="container">
@@ -163,62 +196,6 @@
                 <h3>И многое другое</h3>
                 <p>Кабели, переходники, держатели, внешние аккумуляторы, Яндекс Станции и другие аксессуары для оптовой закупки.</p>
                 <a class="card-link" href="#contact">Запросить прайс <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
-            </article>
-        </div>
-    </div>
-</section>
-
-<!-- НОВОСТИ -->
-<section class="section news" id="news">
-    <div class="container">
-        <div class="section-head reveal">
-            <span class="eyebrow">Новости</span>
-            <h2>Свежее из мира техники</h2>
-            <p>Делимся новинками, которые скоро появятся в нашем ассортименте. Будьте первыми.</p>
-        </div>
-        <div class="news-grid">
-            <article class="news-card news-card-featured reveal">
-                <div class="news-image">
-                    <div class="news-placeholder">
-                        <svg class="ic news-ic"><use href="#i-smart"/></svg>
-                        <span>TECNO</span>
-                    </div>
-                    <span class="news-tag">Новинка</span>
-                </div>
-                <div class="news-body">
-                    <div class="news-meta">
-                        <span>31 июля 2026</span>
-                        <span class="news-dot">·</span>
-                        <span>Смартфоны</span>
-                    </div>
-                    <h3>Tecno показала смартфон с «нулевой рамкой» — первый в индустрии</h3>
-                    <p>На официальном видео представлен концепт-флагман Next-Gen Bezelless Concept Phone: производитель заявил, что ему удалось практически полностью убрать видимую чёрную окантовку между экраном и корпусом. В результате дисплей занимает почти всю лицевую панель — изображение выглядит цельным, как лист. Камера спрятана в небольшое отверстие прямо в матрице. Устройство работает под управлением фирменной оболочки HiOS 16 на базе Android. Официальная презентация пройдёт на выставке IFA 2026 — и если модель запустят в серию, мы уже готовим её к закупке оптом.</p>
-                    <a href="#" class="news-link">Следить за появлением в каталоге <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
-                </div>
-            </article>
-            <article class="news-card reveal">
-                <div class="news-image">
-                    <div class="news-placeholder news-placeholder-sm">
-                        <svg class="ic news-ic-sm"><use href="#i-head"/></svg>
-                    </div>
-                </div>
-                <div class="news-body">
-                    <div class="news-meta"><span>Скоро</span><span class="news-dot">·</span><span>Аксессуары</span></div>
-                    <h3>Новые TWS-гарнитуры Realme в сентябре</h3>
-                    <p>Готовим пополнение линейки беспроводных наушников — ожидайте обновлённый прайс.</p>
-                </div>
-            </article>
-            <article class="news-card reveal">
-                <div class="news-image">
-                    <div class="news-placeholder news-placeholder-sm">
-                        <svg class="ic news-ic-sm"><use href="#i-bolt"/></svg>
-                    </div>
-                </div>
-                <div class="news-body">
-                    <div class="news-meta"><span>Скоро</span><span class="news-dot">·</span><span>Аксессуары</span></div>
-                    <h3>Power Bank с быстрой зарядкой 100W</h3>
-                    <p>Новое поколение внешних аккумуляторов для ноутбуков и флагманов уже в пути на наш склад.</p>
-                </div>
             </article>
         </div>
     </div>
@@ -282,45 +259,24 @@
         <div class="rev-grid">
             <article class="rev reveal">
                 <div class="rev-stars">
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg><svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg><svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg><svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg><svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
                 </div>
                 <p>«Работаем с ФЕРО уже больше 3 лет. Всегда оперативная отправка, ни разу не подвели со сроками. Цены действительно одни из лучших на рынке.»</p>
-                <div class="rev-author">
-                    <div class="rev-ava">АМ</div>
-                    <div><b>Алексей М.</b><span>магазин «СотаВик»</span></div>
-                </div>
+                <div class="rev-author"><div class="rev-ava">АМ</div><div><b>Алексей М.</b><span>магазин «СотаВик»</span></div></div>
             </article>
             <article class="rev reveal">
                 <div class="rev-stars">
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg><svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg><svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg><svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg><svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
                 </div>
                 <p>«Надёжный поставщик. Прайсы всегда актуальные, наличие соответствует заявленному. Менеджеры быстро отвечают и помогают с подбором товара.»</p>
-                <div class="rev-author">
-                    <div class="rev-ava">ИК</div>
-                    <div><b>Ирина К.</b><span>Салон связи «Мегафон»</span></div>
-                </div>
+                <div class="rev-author"><div class="rev-ava">ИК</div><div><b>Ирина К.</b><span>Салон связи «Мегафон»</span></div></div>
             </article>
             <article class="rev reveal">
                 <div class="rev-stars">
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
-                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg><svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg><svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg><svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg><svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
                 </div>
                 <p>«Перешли к вам от другого поставщика и не пожалели. Отправки быстрые, товар приходит целым. Отдельный плюс — и телефоны, и аксессуары можно заказать в одном месте, очень удобно.»</p>
-                <div class="rev-author">
-                    <div class="rev-ava">СВ</div>
-                    <div><b>Сергей В.</b><span>Салон «Теле2»</span></div>
-                </div>
+                <div class="rev-author"><div class="rev-ava">СВ</div><div><b>Сергей В.</b><span>Салон «Теле2»</span></div></div>
             </article>
         </div>
     </div>
@@ -378,6 +334,44 @@
     </div>
 </section>
 </main>
+
+<!-- МОДАЛЬНОЕ ОКНО НОВОСТИ -->
+<div class="modal" id="news-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true">
+        <button class="modal-close" data-close aria-label="Закрыть">✕</button>
+        <div class="modal-image">
+            <div class="news-placeholder">
+                <svg class="ic news-ic"><use href="#i-smart"/></svg>
+                <span>TECNO</span>
+            </div>
+        </div>
+        <div class="modal-content">
+            <div class="news-meta">
+                <span>31 июля 2026</span>
+                <span class="news-dot">·</span>
+                <span>Смартфоны</span>
+            </div>
+            <h3>Tecno показала концепт смартфона с «нулевой рамкой» — экран занимает весь корпус</h3>
+
+            <p>Бренд Tecno представил концепт флагмана нового поколения — смартфон с по-настоящему безрамочным дисплеем. Привычная чёрная окантовка между экраном и корпусом здесь отсутствует полностью: ширина рамки составляет 0 мм. По заявлению компании, такого результата в индустрии ещё никто не достигал.</p>
+
+            <h4 class="modal-sub">Почему это было сложно до сих пор</h4>
+            <p>Даже в самых тонких рамках современных смартфонов остаётся чёрная полоса шириной 1–2 мм: там прячутся внутренние компоненты и технологические зазоры. Инженеры Tecno полностью пересобрали архитектуру устройства — новую компоновку деталей, конструкцию корпуса и технологию посадки дисплея. Это позволило убрать последнюю визуальную границу: изображение буквально доходит до краёв корпуса и создаёт эффект «парящего» экрана.</p>
+
+            <h4 class="modal-sub">Что это даёт пользователю</h4>
+            <p>Видео и фото воспринимаются как единое целое без отвлекающих полос, в играх становится больше полезной площади и лучше обзор, а интерфейс выглядит естественнее в любых сценариях — от чтения до работы с приложениями.</p>
+
+            <h4 class="modal-sub">Что дальше</h4>
+            <p>Концепт — не просто дизайнерский эксперимент. Отработанные решения — новая архитектура дисплея, камеры, сенсорный слой, звук и оболочка — лягут в основу будущих флагманов Tecno и нового узнаваемого стиля бренда. А когда новинки дойдут до рынка, мы обязательно добавим их в наше оптовое предложение.</p>
+
+            <div class="modal-cta">
+                <span>Хотите новинки в ассортимент своего магазина?</span>
+                <a href="#contact" class="btn btn-cta btn-sm" data-close>Запросить прайс-лист</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- ФУТЕР -->
 <footer class="footer">
