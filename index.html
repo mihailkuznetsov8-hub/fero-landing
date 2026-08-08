@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ФЕРО — Оптовая продажа сотовых телефонов и аксессуаров</title>
-    <meta name="description" content="Оптовые поставки сотовых телефонов и аксессуаров по всей России. Лучшие цены, быстрая доставка.">
+    <meta name="description" content="Оптовые поставки сотовых телефонов и аксессуаров по всей России. 25 лет на рынке, более 20 брендов. Отгрузка от 100 000 ₽, доставка за наш счёт.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -17,7 +17,6 @@
        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
        ym(110910048, "init", {
             clickmap:true,
             trackLinks:true,
@@ -29,272 +28,370 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 <body>
-    <!-- ШАПКА -->
-    <header class="header">
-        <div class="container header-container">
-            <a href="#" class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
-                <h1>ФЕРО</h1>
-                <span class="logo-subtitle">Оптовые поставки</span>
+
+<!-- SVG-спрайт -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-smart" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><line x1="11" y1="18" x2="13" y2="18"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+  <symbol id="i-head" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.83z"/><line x1="7" y1="7" x2="7.01" y2="7"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 8.5-8.5h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+</svg>
+
+<!-- ШАПКА -->
+<header class="header" id="header">
+    <div class="container header-inner">
+        <a href="#" class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+            <b>ФЕРО<span>.</span></b>
+            <small>оптовые поставки</small>
+        </a>
+        <nav class="nav">
+            <a href="#catalog">Каталог</a>
+            <a href="#news">Новости</a>
+            <a href="#why">Условия</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <div class="header-right">
+            <a class="header-phone" href="tel:89139487172">8-913-948-71-72</a>
+            <a class="btn btn-cta btn-sm" href="#contact" onclick="ym(110910048,'reachGoal','price_button_click');return true;">Прайс-лист</a>
+            <button class="burger" aria-label="Меню"><span></span></button>
+        </div>
+    </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-badge"><i></i>Только опт · B2B · 25 лет на рынке</div>
+        <h1>Оптовая продажа<br>сотовых телефонов<br>и аксессуаров</h1>
+        <p class="hero-sub">Надёжные поставки для магазинов, маркетплейсов и сервисных центров по всей России с 2001 года. Более 20 брендов, доставка от 1 дня, работаем с ЭДО.</p>
+        <div class="hero-actions">
+            <a href="#contact" class="btn btn-cta" onclick="ym(110910048,'reachGoal','price_button_click');return true;">Получить прайс-лист</a>
+            <a href="#catalog" class="btn btn-ghost">Смотреть каталог</a>
+        </div>
+        <div class="hero-checks">
+            <span><svg class="ic ic-sm"><use href="#i-check"/></svg>Бесплатная доставка от 100 000 ₽</span>
+            <span><svg class="ic ic-sm"><use href="#i-check"/></svg>Отгрузка от 1 дня</span>
+            <span><svg class="ic ic-sm"><use href="#i-check"/></svg>Оригинал, все сертификаты</span>
+        </div>
+        <div class="hero-stats">
+            <div class="stat"><b>25<em> лет</em></b><span>в оптовых поставках</span></div>
+            <div class="stat"><b>20<em>+</em></b><span>брендов в наличии</span></div>
+            <div class="stat"><b>500<em>+</em></b><span>позиций на складе</span></div>
+            <div class="stat"><b>от 1 дня</b><span>скорость отгрузки</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- БРЕНДЫ -->
+<section class="brands">
+    <div class="container">
+        <div class="brands-list">
+            <span class="brand">Apple</span>
+            <span class="brand">Samsung</span>
+            <span class="brand">Xiaomi</span>
+            <span class="brand">HONOR</span>
+            <span class="brand">Huawei</span>
+            <span class="brand">Realme</span>
+            <span class="brand">ONEPLUS</span>
+            <span class="brand">TECNO</span>
+            <span class="brand">Infinix</span>
+            <span class="brand">NOKIA</span>
+            <span class="brand">Blackview</span>
+            <span class="brand">Ulefone</span>
+            <span class="brand">BQ</span>
+            <span class="brand">MAXVI</span>
+            <span class="brand">Philips</span>
+            <span class="brand">Яндекс Станции</span>
+            <span class="brand">и другие</span>
+        </div>
+    </div>
+</section>
+
+<!-- КАТАЛОГ -->
+<section class="section" id="catalog">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Каталог</span>
+            <h2>Наш ассортимент</h2>
+            <p>Полный список товаров с ценами и остатками — в актуальном прайс-листе. Запросите его за 15 минут.</p>
+        </div>
+        <div class="cards">
+            <article class="card reveal">
+                <div class="card-icon"><svg class="ic"><use href="#i-smart"/></svg></div>
+                <h3>Смартфоны оптом</h3>
+                <p>Apple, Samsung, Xiaomi, Realme, Honor и другие ведущие мировые бренды. Актуальные модели и лучшие оптовые цены.</p>
+                <a class="card-link" href="#contact">Запросить прайс <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
+            </article>
+            <article class="card reveal">
+                <div class="card-icon"><svg class="ic"><use href="#i-key"/></svg></div>
+                <h3>Кнопочные телефоны оптом</h3>
+                <p>BQ, Maxvi, Nokia, Philips, Olmio. Широкий выбор моделей для офиса, пожилых людей и защищённых версий.</p>
+                <a class="card-link" href="#contact">Запросить прайс <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
+            </article>
+            <article class="card reveal">
+                <div class="card-icon"><svg class="ic"><use href="#i-bolt"/></svg></div>
+                <h3>Зарядные устройства</h3>
+                <p>Сетевые адаптеры, автомобильные зарядки, беспроводные станции и Power Bank для вашего магазина.</p>
+                <a class="card-link" href="#contact">Запросить прайс <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
+            </article>
+            <article class="card reveal">
+                <div class="card-icon"><svg class="ic"><use href="#i-head"/></svg></div>
+                <h3>Наушники и гарнитуры</h3>
+                <p>Проводные и Bluetooth-наушники, TWS-гарнитуры, спортивные модели. Быстрые поставки аксессуаров для звука.</p>
+                <a class="card-link" href="#contact">Запросить прайс <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
+            </article>
+            <article class="card reveal">
+                <div class="card-icon"><svg class="ic"><use href="#i-shield"/></svg></div>
+                <h3>Чехлы и защита</h3>
+                <p>Чехлы всех типов, защитные стёкла и плёнки под любые популярные модели смартфонов.</p>
+                <a class="card-link" href="#contact">Запросить прайс <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
+            </article>
+            <article class="card reveal">
+                <div class="card-icon"><svg class="ic"><use href="#i-box"/></svg></div>
+                <h3>И многое другое</h3>
+                <p>Кабели, переходники, держатели, внешние аккумуляторы, Яндекс Станции и другие аксессуары для оптовой закупки.</p>
+                <a class="card-link" href="#contact">Запросить прайс <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- НОВОСТИ -->
+<section class="section news" id="news">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Новости</span>
+            <h2>Свежее из мира техники</h2>
+            <p>Делимся новинками, которые скоро появятся в нашем ассортименте. Будьте первыми.</p>
+        </div>
+        <div class="news-grid">
+            <article class="news-card news-card-featured reveal">
+                <div class="news-image">
+                    <div class="news-placeholder">
+                        <svg class="ic news-ic"><use href="#i-smart"/></svg>
+                        <span>TECNO</span>
+                    </div>
+                    <span class="news-tag">Новинка</span>
+                </div>
+                <div class="news-body">
+                    <div class="news-meta">
+                        <span>31 июля 2026</span>
+                        <span class="news-dot">·</span>
+                        <span>Смартфоны</span>
+                    </div>
+                    <h3>Tecno показала смартфон с «нулевой рамкой» — первый в индустрии</h3>
+                    <p>На официальном видео представлен концепт-флагман Next-Gen Bezelless Concept Phone: производитель заявил, что ему удалось практически полностью убрать видимую чёрную окантовку между экраном и корпусом. В результате дисплей занимает почти всю лицевую панель — изображение выглядит цельным, как лист. Камера спрятана в небольшое отверстие прямо в матрице. Устройство работает под управлением фирменной оболочки HiOS 16 на базе Android. Официальная презентация пройдёт на выставке IFA 2026 — и если модель запустят в серию, мы уже готовим её к закупке оптом.</p>
+                    <a href="#" class="news-link">Следить за появлением в каталоге <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
+                </div>
+            </article>
+            <article class="news-card reveal">
+                <div class="news-image">
+                    <div class="news-placeholder news-placeholder-sm">
+                        <svg class="ic news-ic-sm"><use href="#i-head"/></svg>
+                    </div>
+                </div>
+                <div class="news-body">
+                    <div class="news-meta"><span>Скоро</span><span class="news-dot">·</span><span>Аксессуары</span></div>
+                    <h3>Новые TWS-гарнитуры Realme в сентябре</h3>
+                    <p>Готовим пополнение линейки беспроводных наушников — ожидайте обновлённый прайс.</p>
+                </div>
+            </article>
+            <article class="news-card reveal">
+                <div class="news-image">
+                    <div class="news-placeholder news-placeholder-sm">
+                        <svg class="ic news-ic-sm"><use href="#i-bolt"/></svg>
+                    </div>
+                </div>
+                <div class="news-body">
+                    <div class="news-meta"><span>Скоро</span><span class="news-dot">·</span><span>Аксессуары</span></div>
+                    <h3>Power Bank с быстрой зарядкой 100W</h3>
+                    <p>Новое поколение внешних аккумуляторов для ноутбуков и флагманов уже в пути на наш склад.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ПРЕИМУЩЕСТВА -->
+<section class="section why" id="why">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Условия</span>
+            <h2>Почему с нами работают годами</h2>
+        </div>
+        <div class="why-grid">
+            <div class="why-item reveal">
+                <div class="card-icon"><svg class="ic"><use href="#i-tag"/></svg></div>
+                <h3>Лучшие цены</h3>
+                <p>Работаем напрямую с поставщиками — предлагаем одни из самых выгодных оптовых цен на рынке.</p>
+            </div>
+            <div class="why-item reveal">
+                <div class="card-icon"><svg class="ic"><use href="#i-truck"/></svg></div>
+                <h3>Бесплатная доставка</h3>
+                <p>При заказе от 100 000 ₽ доставка по всей России за наш счёт. Отгрузка в день оплаты.</p>
+            </div>
+            <div class="why-item reveal">
+                <div class="card-icon"><svg class="ic"><use href="#i-shield"/></svg></div>
+                <h3>Гарантия качества</h3>
+                <p>Только оригинальная продукция и проверенные аналоги. Сертификаты на все товары.</p>
+            </div>
+            <div class="why-item reveal">
+                <div class="card-icon"><svg class="ic"><use href="#i-chat"/></svg></div>
+                <h3>Персональный подход</h3>
+                <p>Индивидуальные условия для постоянных клиентов, персональный менеджер, ЭДО.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ШАГИ -->
+<section class="section" id="steps">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Процесс</span>
+            <h2>Как мы работаем</h2>
+        </div>
+        <div class="steps-grid">
+            <div class="step reveal"><div class="step-num">1</div><h3>Запрос прайса</h3><p>Оставьте заявку — отправим актуальный прайс-лист на ваш email.</p></div>
+            <div class="step reveal"><div class="step-num">2</div><h3>Выбор товаров</h3><p>Выбираете нужные позиции из прайса, формируете заказ.</p></div>
+            <div class="step reveal"><div class="step-num">3</div><h3>Оплата</h3><p>Удобные способы оплаты: безналичный расчёт, перевод.</p></div>
+            <div class="step reveal"><div class="step-num">4</div><h3>Доставка</h3><p>Отгружаем товар и отправляем удобной транспортной компанией.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section class="section reviews" id="reviews">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Отзывы</span>
+            <h2>Что говорят наши клиенты</h2>
+        </div>
+        <div class="rev-grid">
+            <article class="rev reveal">
+                <div class="rev-stars">
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                </div>
+                <p>«Работаем с ФЕРО уже больше 3 лет. Всегда оперативная отправка, ни разу не подвели со сроками. Цены действительно одни из лучших на рынке.»</p>
+                <div class="rev-author">
+                    <div class="rev-ava">АМ</div>
+                    <div><b>Алексей М.</b><span>магазин «СотаВик»</span></div>
+                </div>
+            </article>
+            <article class="rev reveal">
+                <div class="rev-stars">
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                </div>
+                <p>«Надёжный поставщик. Прайсы всегда актуальные, наличие соответствует заявленному. Менеджеры быстро отвечают и помогают с подбором товара.»</p>
+                <div class="rev-author">
+                    <div class="rev-ava">ИК</div>
+                    <div><b>Ирина К.</b><span>Салон связи «Мегафон»</span></div>
+                </div>
+            </article>
+            <article class="rev reveal">
+                <div class="rev-stars">
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                    <svg class="ic ic-fill ic-sm"><use href="#i-star"/></svg>
+                </div>
+                <p>«Перешли к вам от другого поставщика и не пожалели. Отправки быстрые, товар приходит целым. Отдельный плюс — и телефоны, и аксессуары можно заказать в одном месте, очень удобно.»</p>
+                <div class="rev-author">
+                    <div class="rev-ava">СВ</div>
+                    <div><b>Сергей В.</b><span>Салон «Теле2»</span></div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ФОРМА -->
+<section class="section contact" id="contact">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Форма</span>
+            <h2>Получите актуальный прайс-лист</h2>
+            <p>Оставьте заявку — и в течение 15 минут менеджер отправит вам полный прайс со всеми ценами и остатками.</p>
+        </div>
+        <div class="yandex-form-wrapper reveal">
+            <script src="https://forms.yandex.ru/_static/embed.js"></script>
+            <iframe src="https://forms.yandex.ru/u/6a5f2974505690f639a09559?iframe=1"
+                    frameborder="0"
+                    name="ya-form-6a5f2974505690f639a09559"
+                    width="100%"
+                    height="1100"
+                    style="max-width:650px;margin:0 auto;display:block;border-radius:12px;">
+            </iframe>
+            <p class="form-note">Нажимая кнопку «Отправить», вы соглашаетесь с политикой конфиденциальности</p>
+        </div>
+    </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section class="section contacts-section" id="contacts">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Контакты</span>
+            <h2>Свяжитесь с нами</h2>
+        </div>
+        <div class="contacts-grid">
+            <div class="contact-item reveal">
+                <div class="card-icon"><svg class="ic"><use href="#i-key"/></svg></div>
+                <h3>Телефон</h3>
+                <a href="tel:89139487172">8-913-948-71-72</a>
+                <p>Пн–Пт: 9:00–18:00</p>
+            </div>
+            <div class="contact-item reveal">
+                <div class="card-icon"><svg class="ic"><use href="#i-mail"/></svg></div>
+                <h3>Email</h3>
+                <a href="mailto:feroopt@bk.ru">feroopt@bk.ru</a>
+                <p>Ответим в течение часа</p>
+            </div>
+            <div class="contact-item reveal">
+                <div class="card-icon"><svg class="ic"><use href="#i-pin"/></svg></div>
+                <h3>Регион работы</h3>
+                <p>Вся Россия</p>
+                <p>Доставка в любой город</p>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- ФУТЕР -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <a href="#" class="logo logo-footer">
+                <b>ФЕРО<span>.</span></b>
+                <small>оптовые поставки</small>
             </a>
-            <nav class="header-nav">
-                <a href="#about" class="nav-btn">О нас</a>
-                <a href="#brands" class="nav-btn">Бренды</a>
-                <a href="#reviews" class="nav-btn">Отзывы</a>
-                <a href="#contacts" class="nav-btn nav-btn-primary">Контакты</a>
-            </nav>
-            <div class="header-contacts">
-                <a href="tel:89139487172" class="phone">📞 8-913-948-71-72</a>
-            </div>
+            <p class="footer-copy">© 2001–2026 ФЕРО — Оптовая продажа сотовых телефонов и аксессуаров. Все права защищены.</p>
         </div>
-    </header>
-
-    <!-- ГЛАВНЫЙ ЭКРАН -->
-    <section class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h2>Оптовая продажа<br>сотовых телефонов<br>и аксессуаров</h2>
-                <p class="hero-subtitle">Надёжные оптовые поставки телефонов и аксессуаров по всей России с 2010 года</p>
-                <div class="hero-features">
-                    <span>✅ Лучшие цены</span>
-                    <span>✅ Быстрая доставка</span>
-                    <span>✅ Гарантия качества</span>
-                </div>
-                <a href="#contact" class="btn-primary" onclick="ym(110910048,'reachGoal','price_button_click'); return true;">📋 Получить прайс-лист</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- О КОМПАНИИ -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">О компании ФЕРО</h2>
-<div class="about-content">
-    <p>Мы — надёжный поставщик сотовых телефонов и аксессуаров для бизнеса по всей России. 
-    Работаем с 2010 года — а это значит, что мы пережили столько смен поколений iPhone 
-    и стандартов связи, что нас уже сложно чем-то удивить.</p>
-    
-    <p>За эти годы мы поняли главное: клиентам нужны не просто гаджеты, а <strong>качество, 
-    космическая скорость доставки</strong> и <strong>честные цены</strong> без «сюрпризов» в договоре.
-    У нас вы можете <strong>купить смартфоны оптом</strong> от ведущих мировых брендов, 
-    а также заказать <strong>кнопочные телефоны оптом</strong> для любого сегмента рынка.</p>
-    
-    <p>Мы не ищем мимолетных сделок. Наша миссия — стать тем самым надежным партнером, 
-    с которым ваш бизнес будет уверенно расти год за годом. С нас — лучшие условия 
-    для оптовых закупок, с вас — готовность к долгому и прибыльному сотрудничеству.</p>
-    
-    <p>Обещаем, что наши обязательства будут работать дольше, чем аккумуляторы 
-    у поставляемых нами смартфонов! 🔋</p>
-</div>
-        </div>
-    </section>
-
-    <!-- БРЕНДЫ -->
-    <section class="brands" id="brands">
-        <div class="container">
-            <h2 class="section-title">Работаем с ведущими брендами</h2>
-            <div class="brands-list">
-                <span class="brand-tag brand-tag-apple">Apple</span>,
-                <span class="brand-tag brand-tag-samsung">Samsung</span>,
-                <span class="brand-tag brand-tag-xiaomi">Xiaomi</span>,
-                <span class="brand-tag brand-tag-honor">HONOR</span>,
-                <span class="brand-tag brand-tag-huawei">Huawei</span>,
-                <span class="brand-tag brand-tag-realme">Realme</span>,
-                <span class="brand-tag brand-tag-oneplus">ONEPLUS</span>,
-                <span class="brand-tag brand-tag-tecno">TECNO</span>,
-                <span class="brand-tag brand-tag-infinix">Infinix</span>,
-                <span class="brand-tag brand-tag-nokia">NOKIA</span>,
-                <span class="brand-tag brand-tag-blackview">Blackview</span>,
-                <span class="brand-tag brand-tag-ulefone">Ulefone</span>,
-                <span class="brand-tag brand-tag-bq">BQ</span>,
-                <span class="brand-tag brand-tag-maxvi">MAXVI</span>,
-                <span class="brand-tag brand-tag-phillips">Phillips</span>,
-                <span class="brand-tag brand-tag-yandex">Яндекс станции</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- ТОВАРЫ -->
-    <section class="products" id="products">
-        <div class="container">
-            <h2 class="section-title">Наш ассортимент</h2>
-<div class="products-grid">
-    <div class="product-card">
-        <div class="product-icon">📱</div>
-        <h3>Смартфоны оптом</h3>
-        <p>Купить смартфоны оптом всех популярных брендов: Apple, Samsung, Xiaomi, Realme, Honor и другие. Актуальные модели и лучшие цены</p>
     </div>
-    <div class="product-card">
-        <div class="product-icon">📞</div>
-        <h3>Кнопочные телефоны оптом</h3>
-        <p>Оптом кнопочные телефоны BQ, Maxvi, Nokia, Philips, Olmio. Большой выбор моделей для офиса, пожилых людей и защищённых версий</p>
-    </div>
-    <div class="product-card">
-        <div class="product-icon">🔌</div>
-        <h3>Зарядные устройства</h3>
-        <p>Сетевые адаптеры, автомобильные зарядки, беспроводные зарядные станции, Power Bank оптом для вашего магазина</p>
-    </div>
-    <div class="product-card">
-        <div class="product-icon">🎧</div>
-        <h3>Наушники и гарнитуры</h3>
-        <p>Проводные и Bluetooth наушники, TWS-гарнитуры, спортивные модели. Оптовые поставки аксессуаров для звука</p>
-    </div>
-    <div class="product-card">
-        <div class="product-icon">🛡️</div>
-        <h3>Чехлы и защита</h3>
-        <p>Чехлы всех типов, защитные стёкла, плёнки для любых моделей телефонов. Купить аксессуары оптом с быстрой доставкой</p>
-    </div>
-    <div class="product-card">
-        <div class="product-icon">📦</div>
-        <h3>И многое другое</h3>
-        <p>Кабели, переходники, держатели, внешние аккумуляторы, Яндекс Станции и другие товары для оптовой закупки</p>
-    </div>
-</div>
-        </div>
-    </section>
+</footer>
 
-    <!-- ОТЗЫВЫ -->
-    <section class="reviews" id="reviews">
-        <div class="container">
-            <h2 class="section-title">Что говорят наши клиенты</h2>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">«Работаем с ФЕРО уже больше 3 лет. Всегда оперативная отправка, ни разу не подвели со сроками. Цены действительно одни из лучших на рынке.»</p>
-                    <div class="review-author">Алексей М., магазин «СотаВик»</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">«Надёжный поставщик. Прайсы всегда актуальные, наличие соответствует заявленному. Менеджеры быстро отвечают и помогают с подбором товара.»</p>
-                    <div class="review-author">Ирина К., Салон связи «Мегафон»</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">«Перешли к вам от другого поставщика и не пожалели. Отправки быстрые, товар приходит целым. Отдельный плюс — и телефоны, и аксессуары можно заказать в одном месте, очень удобно.»</p>
-                    <div class="review-author">Сергей В., Салон «Теле2»</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ПРЕИМУЩЕСТВА -->
-    <section class="advantages" id="advantages">
-        <div class="container">
-            <h2 class="section-title">Почему выбирают нас</h2>
-            <div class="advantages-grid">
-                <div class="advantage-card">
-                    <div class="advantage-icon">💰</div>
-                    <h3>Лучшие цены</h3>
-                    <p>Работаем напрямую с поставщиками — предлагаем самые выгодные оптовые цены на рынке</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">🚚</div>
-                    <h3>Быстрая доставка</h3>
-                    <p>Отгрузка в день заказа. Доставка по всей России транспортными компаниями</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">✅</div>
-                    <h3>Гарантия качества</h3>
-                    <p>Только оригинальная продукция и проверенные аналоги. Гарантия на все товары</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">📞</div>
-                    <h3>Персональный подход</h3>
-                    <p>Индивидуальные условия для постоянных клиентов. Персональный менеджер</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- КАК РАБОТАЕМ -->
-    <section class="how-we-work">
-        <div class="container">
-            <h2 class="section-title">Как мы работаем</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Запрос прайса</h3>
-                    <p>Оставьте заявку — отправим актуальный прайс-лист на ваш email</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Выбор товаров</h3>
-                    <p>Выбираете нужные позиции из прайса, формируете заказ</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Оплата</h3>
-                    <p>Удобные способы оплаты: безналичный расчёт, перевод</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Доставка</h3>
-                    <p>Отгружаем товар и отправляем удобной транспортной компанией</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Получите актуальный прайс-лист</h2>
-            <p class="contact-subtitle">Оставьте заявку и мы отправим вам полный прайс с актуальными ценами</p>
-            
-            <!-- ЯНДЕКС.ФОРМА -->
-            <div class="yandex-form-wrapper">
-                <script src="https://forms.yandex.ru/_static/embed.js"></script>
-                <iframe src="https://forms.yandex.ru/u/6a5f2974505690f639a09559?iframe=1" 
-                        frameborder="0" 
-                        name="ya-form-6a5f2974505690f639a09559" 
-                        width="100%"
-                        height="1100"
-                        style="max-width: 650px; margin: 0 auto; display: block; border-radius: 12px;">
-                </iframe>
-            </div>
-            
-            <p class="form-note" style="text-align: center; margin-top: 20px; color: #666;">
-                Нажимая кнопку "Отправить", вы соглашаетесь с политикой конфиденциальности
-            </p>
-        </div>
-    </section>
-
-    <!-- КОНТАКТЫ -->
-    <section class="contacts" id="contacts">
-        <div class="container">
-            <h2 class="section-title">Контакты</h2>
-            <div class="contacts-grid">
-                <div class="contact-item">
-                    <div class="contact-icon">📞</div>
-                    <h3>Телефон</h3>
-                    <a href="tel:89139487172">8-913-948-71-72</a>
-                    <p>Пн-Пт: 9:00 - 18:00</p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">✉️</div>
-                    <h3>Email</h3>
-                    <a href="mailto:feroopt@bk.ru">feroopt@bk.ru</a>
-                    <p>Ответим в течение часа</p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <h3>Регион работы</h3>
-                    <p>Вся Россия</p>
-                    <p>Доставка в любой город</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ПОДВАЛ -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 ФЕРО — Оптовая продажа сотовых телефонов и аксессуаров</p>
-                <p>Все права защищены</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
