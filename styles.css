@@ -152,6 +152,7 @@ body{
     background:var(--bg);
     box-shadow:0 24px 60px rgba(13,18,32,.06);
     transition:transform .25s,box-shadow .25s;
+    cursor:pointer;
 }
 .news-card:hover{transform:translateY(-4px);box-shadow:0 28px 64px rgba(13,18,32,.1)}
 .news-image{
@@ -169,7 +170,7 @@ body{
 .news-ic{width:72px;height:72px;opacity:.9}
 .news-placeholder span{font-family:'Unbounded';font-weight:600;font-size:26px;letter-spacing:.06em}
 .news-tag{
-    position:absolute;top:16px;left:16px;
+    position:absolute;top:16px;left:16px;z-index:2;
     background:var(--cta);color:#fff;
     padding:6px 14px;border-radius:999px;
     font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;
@@ -183,7 +184,7 @@ body{
     line-height:1.35;font-weight:600;
 }
 .news-body p{color:var(--muted);font-size:15.5px}
-.news-body .btn{margin-top:8px}
+.news-body .btn{margin-top:8px;align-self:flex-start}
 
 /* Модальное окно */
 .modal{
