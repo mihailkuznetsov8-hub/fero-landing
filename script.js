@@ -8,8 +8,6 @@ window.addEventListener('scroll', () => {
 document.querySelector('.burger').addEventListener('click', () => {
     header.classList.toggle('open');
 });
-
-// Закрытие меню при клике по ссылке
 document.querySelectorAll('.nav a').forEach(a => {
     a.addEventListener('click', () => header.classList.remove('open'));
 });
@@ -25,7 +23,7 @@ const io = new IntersectionObserver(es => {
 }, { threshold: .12 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// Плавная прокрутка к якорям (дублирует CSS scroll-behavior, но для надёжности)
+// Плавная прокрутка к якорям
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
@@ -37,4 +35,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             }
         }
     });
+});
+
+// ===== Модальное окно новости =====
+const modal = document.getElementById('news-modal');
+
+function openModal() {
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden'; // блокируем прокрутку фона
+}
+function closeModal() {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+}
+
+// Открытие
+document.querySelectorAll('[data-open-news]').forEach(btn => {
+    btn.addEventListener('click', e => { e.preventDefault(); openModal(); });
+});
+// Закрытие: крестик, подложка, CTA-ссылка
+modal.querySelectorAll('[data-close]').forEach(el => {
+    el.addEventListener('click', () => closeModal());
+});
+// Закрытие по Escape
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
 });
