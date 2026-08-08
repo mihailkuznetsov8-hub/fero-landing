@@ -51,9 +51,9 @@ function closeModal() {
     document.body.style.overflow = '';
 }
 
-// Открытие
-document.querySelectorAll('[data-open-news]').forEach(btn => {
-    btn.addEventListener('click', e => { e.preventDefault(); openModal(); });
+// Открытие: клик по всей карточке или по кнопке «Читать новость»
+document.querySelectorAll('[data-open-news]').forEach(el => {
+    el.addEventListener('click', e => { e.preventDefault(); openModal(); });
 });
 // Закрытие: крестик, подложка, CTA-ссылка
 modal.querySelectorAll('[data-close]').forEach(el => {
