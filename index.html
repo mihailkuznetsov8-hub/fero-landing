@@ -119,7 +119,7 @@
     </div>
 </section>
 
-<!-- НОВОСТИ (сразу после брендов) -->
+<!-- НОВОСТИ -->
 <section class="section news" id="news">
     <div class="container">
         <div class="section-head reveal">
@@ -128,14 +128,16 @@
             <p>Следим за новинками, которые скоро появятся в нашем оптовом предложении.</p>
         </div>
 
-        <article class="news-card reveal">
+        <!-- Кликабельна вся карточка: полный текст откроется во всплывающем окне -->
+        <article class="news-card reveal" data-open-news>
             <div class="news-image">
-                <!-- Чтобы вставить реальное фото: удалите блок .news-placeholder ниже
-                     и вставьте: <img class="news-img" src="images/tecno-bezelless.jpg" alt="Безрамочный концепт Tecno"> -->
                 <div class="news-placeholder">
                     <svg class="ic news-ic"><use href="#i-smart"/></svg>
                     <span>TECNO</span>
                 </div>
+                <!-- Фото по ссылке. Чтобы заменить на своё: положите файл в папку images
+                     и пропишите src="images/имя.jpg" -->
+                <img class="news-img" src="https://image.qwenlm.ai/public_source/6efbe35f-abfe-4ce5-a122-b673dae4355d/15b8fba69-a154-4c5e-a882-256d8e1646ac7619.png" alt="Безрамочный концепт-смартфон Tecno" onerror="this.remove()">
                 <span class="news-tag">Новинка</span>
             </div>
             <div class="news-body">
@@ -335,7 +337,7 @@
 </section>
 </main>
 
-<!-- МОДАЛЬНОЕ ОКНО НОВОСТИ -->
+<!-- ВСПЛЫВАЮЩЕЕ ОКНО НОВОСТИ -->
 <div class="modal" id="news-modal" aria-hidden="true">
     <div class="modal-backdrop" data-close></div>
     <div class="modal-panel" role="dialog" aria-modal="true">
@@ -345,6 +347,7 @@
                 <svg class="ic news-ic"><use href="#i-smart"/></svg>
                 <span>TECNO</span>
             </div>
+            <img class="news-img" src="https://image.qwenlm.ai/public_source/6efbe35f-abfe-4ce5-a122-b673dae4355d/15b8fba69-a154-4c5e-a882-256d8e1646ac7619.png" alt="Безрамочный концепт-смартфон Tecno" onerror="this.remove()">
         </div>
         <div class="modal-content">
             <div class="news-meta">
