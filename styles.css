@@ -154,6 +154,7 @@ body{
     transition:transform .25s,box-shadow .25s;
     cursor:pointer;
 }
+.news-card + .news-card{margin-top:32px}
 .news-card:hover{transform:translateY(-4px);box-shadow:0 28px 64px rgba(13,18,32,.1)}
 .news-image{
     position:relative;
@@ -237,6 +238,22 @@ body{
     display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;
 }
 .modal-cta span{font-weight:700;font-size:15px}
+
+/* Панель «Поделиться» в модалке */
+.share-bar{
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    margin-top:28px;padding-top:22px;border-top:1px solid var(--line);
+}
+.share-bar > span{font-weight:800;font-size:14px;color:var(--ink)}
+.share-btn{
+    display:inline-flex;align-items:center;
+    padding:9px 16px;border-radius:999px;
+    border:1px solid var(--line);background:var(--bg);
+    color:var(--ink);font:inherit;font-size:13px;font-weight:700;
+    text-decoration:none;cursor:pointer;transition:.2s;
+}
+.share-btn:hover{border-color:var(--primary);color:var(--primary);transform:translateY(-1px)}
+.share-btn.copied{background:#e7f9ef;border-color:#86efac;color:#15803d}
 
 /* Карточки (каталог) */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
