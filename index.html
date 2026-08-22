@@ -1,10 +1,11 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ФЕРО — Оптовая продажа сотовых телефонов и аксессуаров</title>
     <meta name="description" content="Оптовые поставки сотовых телефонов и аксессуаров по всей России. 25 лет на рынке, более 20 брендов. Отгрузка от 100 000 ₽, доставка за наш счёт.">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +37,7 @@
   <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
   <symbol id="i-head" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5z"/></symbol>
   <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
-  <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></symbol>
   <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.83z"/><line x1="7" y1="7" x2="7.01" y2="7"/></symbol>
   <symbol id="i-truck" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
@@ -125,32 +126,182 @@
         <div class="section-head reveal">
             <span class="eyebrow">Новости</span>
             <h2>Свежее из мира техники</h2>
-            <p>Следим за новинками, которые скоро появятся в нашем оптовом предложении.</p>
+            <p>Аналитика рынка, инсайды и технологии, которые скоро появятся в нашем оптовом предложении.</p>
         </div>
 
-        <!-- Кликабельна вся карточка: полный текст откроется во всплывающем окне -->
-        <article class="news-card reveal" data-open-news>
-            <div class="news-image">
-                <div class="news-placeholder">
-                    <svg class="ic news-ic"><use href="#i-smart"/></svg>
-                    <span>TECNO</span>
+        <!-- КАРТОЧКА 1: ДЕФИЦИТ ПАМЯТИ -->
+        <article class="news-card reveal" id="news-dram" data-open-news>
+            <div class="news-image" style="background: linear-gradient(135deg, #ff6b2c 0%, #0b0f1c 100%);">
+                <div class="news-placeholder"><svg class="ic news-ic"><use href="#i-bolt"/></svg><span>АНАЛИТИКА</span></div>
+                <span class="news-tag" style="background: #fff; color: #ff6b2c;">Важно</span>
+            </div>
+            <div class="news-body">
+                <div class="news-meta"><span>22 августа 2026</span><span class="news-dot">·</span><span>Рынок</span></div>
+                <h3>Рынок штормит: дефицит памяти и скачок оптовых цен до 30%</h3>
+                <p>Во втором квартале глобальные поставки упали на 11% из-за острого дефицита микросхем памяти DRAM. Производители готовят повышение цен на 15–30%.</p>
+                <button class="btn btn-primary-soft" data-open-news>Читать новость <svg class="ic ic-sm"><use href="#i-arrow"/></svg></button>
+            </div>
+            <template class="news-full-content">
+                <div class="modal-image" style="background: linear-gradient(135deg, #ff6b2c 0%, #0b0f1c 100%);">
+                    <div class="news-placeholder"><svg class="ic news-ic"><use href="#i-bolt"/></svg><span>АНАЛИТИКА</span></div>
                 </div>
-                <!-- Фото по ссылке. Чтобы заменить на своё: положите файл в папку images
-                     и пропишите src="images/имя.jpg" -->
+                <div class="modal-content">
+                    <div class="news-meta"><span>22 августа 2026</span><span class="news-dot">·</span><span>Рынок и Логистика</span></div>
+                    <h3>Рынок штормит: дефицит памяти и скачок оптовых цен до 30%</h3>
+                    <p>Аналитические агентства зафиксировали падение глобальных поставок смартфонов на 11% во втором квартале 2026 года. Главная причина — острый мировой дефицит микросхем памяти DRAM, который затронул всех крупных производителей.</p>
+                    <h4 class="modal-sub">Что происходит с ценами</h4>
+                    <p>Из-за нехватки комплектующих вендоры вынуждены пересматривать себестоимость. По прогнозам экспертов, уже в ближайшие месяцы оптовые цены на смартфоны могут вырасти на 15–30%. В первую очередь это коснётся бюджетного и среднего сегмента, где маржинальность и так под давлением.</p>
+                    <h4 class="modal-sub">Рекомендация для партнёров</h4>
+                    <p>Для оптового звена это четкий сигнал: сейчас лучшее время для формирования складских запасов. Мы рекомендуем выкупить ходовые позиции по текущим контрактам, пока поставщики не обновили прайс-листы. Это позволит зафиксировать маржу и предложить клиентам ликвидный товар до начала осеннего сезона.</p>
+                    <div class="modal-cta">
+                        <span>Успейте выкупить сток по старым ценам?</span>
+                        <a href="#contact" class="btn btn-cta btn-sm" data-close>Связаться с менеджером</a>
+                    </div>
+                </div>
+            </template>
+        </article>
+
+        <!-- КАРТОЧКА 2: ЭРА 8000 мАч -->
+        <article class="news-card reveal" id="news-battery" data-open-news>
+            <div class="news-image" style="background: linear-gradient(135deg, #10b981 0%, #0b0f1c 100%);">
+                <div class="news-placeholder"><svg class="ic news-ic"><use href="#i-bolt"/></svg><span>8000 мАч</span></div>
+                <img class="news-img" src="images/battery-8000.jpg" alt="Смартфон с кремний-углеродной батареей" onerror="this.remove()">
+                <span class="news-tag" style="background: #10b981;">Технологии</span>
+            </div>
+            <div class="news-body">
+                <div class="news-meta"><span>21 августа 2026</span><span class="news-dot">·</span><span>Технологии</span></div>
+                <h3>Эра 8000 мАч: как новые батареи изменили смартфоны в 2026 году</h3>
+                <p>Тонкие и лёгкие смартфоны с аккумуляторами 7000–8000 мАч, которые работают по 3–4 дня без подзарядки, стали реальностью. Разбираемся в кремний-углеродных анодах.</p>
+                <button class="btn btn-primary-soft" data-open-news>Читать новость <svg class="ic ic-sm"><use href="#i-arrow"/></svg></button>
+            </div>
+            <template class="news-full-content">
+                <div class="modal-image" style="background: linear-gradient(135deg, #10b981 0%, #0b0f1c 100%);">
+                    <div class="news-placeholder"><svg class="ic news-ic"><use href="#i-bolt"/></svg><span>8000 мАч</span></div>
+                    <img class="news-img" src="images/battery-8000.jpg" alt="Смартфон с кремний-углеродной батареей" onerror="this.remove()">
+                </div>
+                <div class="modal-content">
+                    <div class="news-meta"><span>21 августа 2026</span><span class="news-dot">·</span><span>Технологии</span></div>
+                    <h3>Эра 8000 мАч: как новые батареи изменили смартфоны в 2026 году</h3>
+                    <p>Долгое время владельцы смартфонов жили по одному сценарию: если хочешь тонкий и красивый телефон — заряжай его каждый вечер. Если нужен автономный «монстр» — покупай огромный, тяжёлый и неуклюжий «бронефон». Но в 2026 году мобильная индустрия совершила тихую революцию.</p>
+                    <p>В продажу массово вышли обычные, изящные смартфоны с аккумуляторами ёмкостью от 7000 до 8000 мАч, которые легко работают по 3–4 дня без подзарядки. При этом их толщина не превышает скромные 8 мм!</p>
+                    <h4 class="modal-sub">Секрет в кремнии: прощай, старый графит</h4>
+                    <p>Главный виновник прорыва — переход на кремний-углеродную (Si-C) технологию анодов. Раньше в батареях использовали чистый графит, но учёные выяснили, что кремний способен удерживать в 10 раз больше энергии. Долгое время инженеры не могли укротить кремний: при зарядке он сильно раздувался и разрушал батарею. Решение нашли, спрятав частицы кремния в прочный углеродный каркас.</p>
+                    <h4 class="modal-sub">Что это дало пользователям</h4>
+                    <p>Фантастическая плотность: батарея стала физически в два раза меньше, но сохранила огромную ёмкость. Морозостойкость: новые аккумуляторы гораздо меньше разряжаются на холоде. Долговечность: такие батареи служат до 5–6 лет без заметной потери ёмкости.</p>
+                    <h4 class="modal-sub">Главные герои нового тренда</h4>
+                    <p>Xiaomi Redmi Note 17 5G — народный хит получил полноценную кремний-углеродную батарею на 8000 мАч с быстрой зарядкой 45 Вт. Смартфон остался тонким и лёгким, но теперь его можно брать в поход на все выходные.</p>
+                    <p>POCO X8 Pro Max — продвинутая модель с аккумулятором на 8500 мАч и зарядкой 100 Вт: с нуля до сотни заряжается чуть больше чем за полчаса.</p>
+                    <p>Honor Power 5G — стильный субфлагман толщиной всего 7,98 мм, внутрь которого инженеры умудрились упаковать 8000 мАч.</p>
+                    <h4 class="modal-sub">Что дальше</h4>
+                    <p>Эксперты отмечают: 2026 год стал официальным началом «эры 10 000 мАч». Известные бренды, включая Oppo, уже анонсировали устройства с пятизначной ёмкостью, которые по весу не отличаются от привычных моделей. Похоже, очень скоро мы начнём забывать, куда положили зарядное устройство от своего телефона.</p>
+                    <div class="modal-cta">
+                        <span>Redmi, POCO и HONOR уже в нашем оптовом прайсе!</span>
+                        <a href="#contact" class="btn btn-cta btn-sm" data-close>Запросить прайс-лист</a>
+                    </div>
+                </div>
+            </template>
+        </article>
+
+        <!-- КАРТОЧКА 3: APPLE IPHONE 17 -->
+        <article class="news-card reveal" id="news-iphone17" data-open-news>
+            <div class="news-image">
+                <div class="news-placeholder"><svg class="ic news-ic"><use href="#i-smart"/></svg><span>APPLE</span></div>
+                <span class="news-tag">Инсайд</span>
+            </div>
+            <div class="news-body">
+                <div class="news-meta"><span>20 августа 2026</span><span class="news-dot">·</span><span>Apple B2B</span></div>
+                <h3>Apple готовит внеплановое повышение цен на линейку iPhone 17</h3>
+                <p>Инсайдеры сообщают, что купертиновцы планируют поднять цены на всю текущую линейку iPhone 17 уже до официальной осенней презентации.</p>
+                <button class="btn btn-primary-soft" data-open-news>Читать новость <svg class="ic ic-sm"><use href="#i-arrow"/></svg></button>
+            </div>
+            <template class="news-full-content">
+                <div class="modal-image">
+                    <div class="news-placeholder"><svg class="ic news-ic"><use href="#i-smart"/></svg><span>APPLE</span></div>
+                </div>
+                <div class="modal-content">
+                    <div class="news-meta"><span>20 августа 2026</span><span class="news-dot">·</span><span>Apple B2B</span></div>
+                    <h3>Apple готовит внеплановое повышение цен на линейку iPhone 17</h3>
+                    <p>Авторитетные инсайдеры сообщают, что Apple планирует внепланово поднять цены на всю текущую линейку iPhone 17 по всему миру. Это нестандартный шаг для компании, которая обычно меняет ценообразование только во время официальных презентаций.</p>
+                    <h4 class="modal-sub">Почему это важно для опта</h4>
+                    <p>Для розницы и оптовых дистрибьюторов это означает сужение маржинального окна. Текущие контракты и складские остатки становятся «золотым активом». Отгрузки по старым ценам сейчас — лучший способ зафиксировать прибыль и обеспечить свои точки ликвидным товаром.</p>
+                    <h4 class="modal-sub">Наши действия</h4>
+                    <p>Мы мониторим ситуацию с поставками Apple ежедневно. На нашем складе еще есть объёмы iPhone 17 по старым оптовым ценам. Рекомендуем партнёрам не откладывать заявки на осень.</p>
+                    <div class="modal-cta">
+                        <span>Забронировать объём iPhone 17?</span>
+                        <a href="#contact" class="btn btn-cta btn-sm" data-close>Запросить прайс-лист</a>
+                    </div>
+                </div>
+            </template>
+        </article>
+
+        <!-- КАРТОЧКА 4: ПРЕЗЕНТАЦИЯ 9 СЕНТЯБРЯ -->
+        <article class="news-card reveal" id="news-apple-event" data-open-news>
+            <div class="news-image" style="background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);">
+                <div class="news-placeholder"><svg class="ic news-ic"><use href="#i-star"/></svg><span>EVENT</span></div>
+                <span class="news-tag" style="background: #3b82f6;">Тренды</span>
+            </div>
+            <div class="news-body">
+                <div class="news-meta"><span>18 августа 2026</span><span class="news-dot">·</span><span>Ритейл</span></div>
+                <h3>9 сентября: ждем iPhone 18 и таинственный «Ultra»</h3>
+                <p>Стала известна точная дата главного события года. Инсайдеры утверждают, что компания покажет не только новое поколение, но и совершенно новый форм-фактор.</p>
+                <button class="btn btn-primary-soft" data-open-news>Читать новость <svg class="ic ic-sm"><use href="#i-arrow"/></svg></button>
+            </div>
+            <template class="news-full-content">
+                <div class="modal-image" style="background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);">
+                    <div class="news-placeholder"><svg class="ic news-ic"><use href="#i-star"/></svg><span>EVENT</span></div>
+                </div>
+                <div class="modal-content">
+                    <div class="news-meta"><span>18 августа 2026</span><span class="news-dot">·</span><span>Ритейл и Тренды</span></div>
+                    <h3>9 сентября: ждем iPhone 18 и таинственный «Ultra»</h3>
+                    <p>Стала известна точная дата главной осенней презентации Apple — 9 сентября. Именно в этот день купертиновцы традиционно показывают новые флагманы, которые формируют рынок на год вперёд.</p>
+                    <h4 class="modal-sub">Что покажут?</h4>
+                    <p>Ожидается выход линейки iPhone 18, которая получит обновленные AI-чипы и новые функции нейросетевой обработки фото. Но главный интригующий слух — премьера совершенно нового форм-фактора, который инсайдеры называют «iPhone Ultra». Предположительно, это будет устройство без физических кнопок и портов, с продвинутой беспроводной зарядкой.</p>
+                    <h4 class="modal-sub">Готовимся к хайпу</h4>
+                    <p>Розница и маркетплейсы уже начинают формировать листы предзаказов. Осенний сезон традиционно приносит максимальный спрос. Мы готовим логистику и прямые контракты на отгрузку новинок в числе первых.</p>
+                    <div class="modal-cta">
+                        <span>Хотите встать в лист предзаказа?</span>
+                        <a href="#contact" class="btn btn-cta btn-sm" data-close>Связаться с нами</a>
+                    </div>
+                </div>
+            </template>
+        </article>
+
+        <!-- КАРТОЧКА 5: TECNO -->
+        <article class="news-card reveal" id="news-tecno" data-open-news>
+            <div class="news-image">
+                <div class="news-placeholder"><svg class="ic news-ic"><use href="#i-smart"/></svg><span>TECNO</span></div>
                 <img class="news-img" src="https://image.qwenlm.ai/public_source/6efbe35f-abfe-4ce5-a122-b673dae4355d/15b8fba69-a154-4c5e-a882-256d8e1646ac7619.png" alt="Безрамочный концепт-смартфон Tecno" onerror="this.remove()">
                 <span class="news-tag">Новинка</span>
             </div>
             <div class="news-body">
-                <div class="news-meta">
-                    <span>31 июля 2026</span>
-                    <span class="news-dot">·</span>
-                    <span>Смартфоны</span>
-                </div>
+                <div class="news-meta"><span>31 июля 2026</span><span class="news-dot">·</span><span>Смартфоны</span></div>
                 <h3>Tecno показала концепт смартфона с «нулевой рамкой» — экран занимает весь корпус</h3>
-                <p>Впервые в индустрии инженерам удалось полностью убрать чёрную окантовку между дисплеем и корпусом: изображение доходит до самых краёв. Рассказываем, как это устроено и когда новинка может добраться до прилавков.</p>
+                <p>Впервые в индустрии инженерам удалось полностью убрать чёрную окантовку между дисплеем и корпусом: изображение доходит до самых краёв.</p>
                 <button class="btn btn-primary-soft" data-open-news>Читать новость <svg class="ic ic-sm"><use href="#i-arrow"/></svg></button>
             </div>
+            <template class="news-full-content">
+                <div class="modal-image">
+                    <div class="news-placeholder"><svg class="ic news-ic"><use href="#i-smart"/></svg><span>TECNO</span></div>
+                    <img class="news-img" src="https://image.qwenlm.ai/public_source/6efbe35f-abfe-4ce5-a122-b673dae4355d/15b8fba69-a154-4c5e-a882-256d8e1646ac7619.png" alt="Безрамочный концепт-смартфон Tecno" onerror="this.remove()">
+                </div>
+                <div class="modal-content">
+                    <div class="news-meta"><span>31 июля 2026</span><span class="news-dot">·</span><span>Смартфоны</span></div>
+                    <h3>Tecno показала концепт смартфона с «нулевой рамкой» — экран занимает весь корпус</h3>
+                    <p>Бренд Tecno представил концепт флагмана нового поколения — смартфон с по-настоящему безрамочным дисплеем. Привычная чёрная окантовка между экраном и корпусом здесь отсутствует полностью: ширина рамки составляет 0 мм. По заявлению компании, такого результата в индустрии ещё никто не достигал.</p>
+                    <h4 class="modal-sub">Почему это было сложно до сих пор</h4>
+                    <p>Даже в самых тонких рамках современных смартфонов остаётся чёрная полоса шириной 1–2 мм: там прячутся внутренние компоненты и технологические зазоры. Инженеры Tecno полностью пересобрали архитектуру устройства — новую компоновку деталей, конструкцию корпуса и технологию посадки дисплея. Это позволило убрать последнюю визуальную границу: изображение буквально доходит до краёв корпуса и создаёт эффект «парящего» экрана.</p>
+                    <h4 class="modal-sub">Что это даёт пользователю</h4>
+                    <p>Видео и фото воспринимаются как единое целое без отвлекающих полос, в играх становится больше полезной площади и лучше обзор, а интерфейс выглядит естественнее в любых сценариях — от чтения до работы с приложениями.</p>
+                    <h4 class="modal-sub">Что дальше</h4>
+                    <p>Концепт — не просто дизайнерский эксперимент. Отработанные решения — новая архитектура дисплея, камеры, сенсорный слой, звук и оболочка — лягут в основу будущих флагманов Tecno и нового узнаваемого стиля бренда. А когда новинки дойдут до рынка, мы обязательно добавим их в наше оптовое предложение.</p>
+                    <div class="modal-cta">
+                        <span>Хотите новинки в ассортимент своего магазина?</span>
+                        <a href="#contact" class="btn btn-cta btn-sm" data-close>Запросить прайс-лист</a>
+                    </div>
+                </div>
+            </template>
         </article>
+
     </div>
 </section>
 
@@ -337,43 +488,10 @@
 </section>
 </main>
 
-<!-- ВСПЛЫВАЮЩЕЕ ОКНО НОВОСТИ -->
+<!-- ВСПЛЫВАЮЩЕЕ ОКНО НОВОСТИ (контент подставляется из шаблонов карточек) -->
 <div class="modal" id="news-modal" aria-hidden="true">
     <div class="modal-backdrop" data-close></div>
-    <div class="modal-panel" role="dialog" aria-modal="true">
-        <button class="modal-close" data-close aria-label="Закрыть">✕</button>
-        <div class="modal-image">
-            <div class="news-placeholder">
-                <svg class="ic news-ic"><use href="#i-smart"/></svg>
-                <span>TECNO</span>
-            </div>
-            <img class="news-img" src="https://image.qwenlm.ai/public_source/6efbe35f-abfe-4ce5-a122-b673dae4355d/15b8fba69-a154-4c5e-a882-256d8e1646ac7619.png" alt="Безрамочный концепт-смартфон Tecno" onerror="this.remove()">
-        </div>
-        <div class="modal-content">
-            <div class="news-meta">
-                <span>31 июля 2026</span>
-                <span class="news-dot">·</span>
-                <span>Смартфоны</span>
-            </div>
-            <h3>Tecno показала концепт смартфона с «нулевой рамкой» — экран занимает весь корпус</h3>
-
-            <p>Бренд Tecno представил концепт флагмана нового поколения — смартфон с по-настоящему безрамочным дисплеем. Привычная чёрная окантовка между экраном и корпусом здесь отсутствует полностью: ширина рамки составляет 0 мм. По заявлению компании, такого результата в индустрии ещё никто не достигал.</p>
-
-            <h4 class="modal-sub">Почему это было сложно до сих пор</h4>
-            <p>Даже в самых тонких рамках современных смартфонов остаётся чёрная полоса шириной 1–2 мм: там прячутся внутренние компоненты и технологические зазоры. Инженеры Tecno полностью пересобрали архитектуру устройства — новую компоновку деталей, конструкцию корпуса и технологию посадки дисплея. Это позволило убрать последнюю визуальную границу: изображение буквально доходит до краёв корпуса и создаёт эффект «парящего» экрана.</p>
-
-            <h4 class="modal-sub">Что это даёт пользователю</h4>
-            <p>Видео и фото воспринимаются как единое целое без отвлекающих полос, в играх становится больше полезной площади и лучше обзор, а интерфейс выглядит естественнее в любых сценариях — от чтения до работы с приложениями.</p>
-
-            <h4 class="modal-sub">Что дальше</h4>
-            <p>Концепт — не просто дизайнерский эксперимент. Отработанные решения — новая архитектура дисплея, камеры, сенсорный слой, звук и оболочка — лягут в основу будущих флагманов Tecno и нового узнаваемого стиля бренда. А когда новинки дойдут до рынка, мы обязательно добавим их в наше оптовое предложение.</p>
-
-            <div class="modal-cta">
-                <span>Хотите новинки в ассортимент своего магазина?</span>
-                <a href="#contact" class="btn btn-cta btn-sm" data-close>Запросить прайс-лист</a>
-            </div>
-        </div>
-    </div>
+    <div class="modal-panel" role="dialog" aria-modal="true"></div>
 </div>
 
 <!-- ФУТЕР -->
